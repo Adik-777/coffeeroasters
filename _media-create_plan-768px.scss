@@ -1,0 +1,143 @@
+@media (max-width: 800px) {
+    .slider {
+        &__subscribeDefault {
+            background-image: url(./images/slider_subscribe_768.jpg);
+            min-height: 400px;
+
+
+            &-box {
+                max-width: 398px;
+                margin-left: 58px;
+            }
+        }
+
+        &__subscribeDefault_box {
+
+            &-title {
+                font-size: 48px;
+                line-height: 48px;
+                margin-bottom: 24px;
+            }
+
+            // &-text {
+
+            // }
+        }
+    }
+
+    .choice_background {
+        max-width: 768px;
+        min-height: 640px;
+        margin: 144px 0;
+        padding-top: 112px;
+    }
+
+    .choice {
+        max-width: 689px;
+
+        &-oval {
+            width: 497px;
+            margin-bottom: 48px;
+        }
+    }
+
+    // .choice_wrap {
+    // }
+
+    .choice_item {
+        max-width: 219px;
+
+        &-number {
+            margin-bottom: 42px;
+        }
+
+        &-title {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 38px;
+        }
+
+        // &-text {
+        // }
+    }
+
+    .assortment {
+        display: flex;
+        justify-content: space-between;
+
+        aside {
+            display: none;
+        }
+
+        &__choice {
+            margin: 0 auto;
+
+            &-wrap {
+                max-width: 689px;
+            }
+
+            &-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+                margin-top: 100px
+            }
+
+            &-title_1 {
+                margin-top: 0;
+            }
+
+            &-title_button {
+                margin-top: 60px;
+            }
+            &-title1_button {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            // &-wrap_box {
+            //     // display: none;
+            // }
+
+            &-box {
+                width: 223px;
+            }
+
+            // &-box_title {
+
+            // }
+
+            &-box_text {
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 26px;
+            }
+
+        }
+    }
+
+    .order {
+        margin-top: 144px;
+
+        &__wrap {
+            align-items: center;
+            margin-bottom: 144px;
+        }
+
+        // &__title {
+
+        // }
+
+        // &__text {
+
+
+        //     // &-capsul {
+
+        //     // }
+        // }
+    }
+
+    // .button {
+
+    //     &__order {}
+    // }
+}

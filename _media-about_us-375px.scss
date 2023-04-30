@@ -1,0 +1,123 @@
+@media (max-width: 400px) {
+    h2 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .slider {
+        &__about {
+            margin-bottom: 120px;
+            align-items: center;
+            background-image: url(./images/slider_about_375.png);
+            background-size: cover;
+            min-height: 400px;
+        }
+
+        &__about_box {
+            max-width: 279px;
+            text-align: center;
+            padding-left: 0;
+            margin: 0 auto;
+
+            &-title {
+                margin-bottom: 24px;
+            }
+
+            &-text {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .commitment_wrap {
+        margin-bottom: 198px;
+    }
+
+    .commitment {
+        min-height: 856px;
+
+        &__img {
+            background-image: url(./images/commitment_img-375.png);
+            background-size: cover;
+            width: 327px;
+            height: 400px;
+            margin-bottom: 48px;
+        }
+
+        &__box {
+            max-width: 326px;
+            text-align: center;
+
+            &-title {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+
+            // &-text {
+
+            // }
+        }
+    }
+
+    .quality {
+        max-width: 327px;
+        min-height: 509px;
+
+        &-wrap {
+            align-items: flex-end;
+        }
+
+        &-box {
+            max-width: 279px;
+            padding-bottom: 61px;
+        }
+
+        &-title {
+            line-height: 28px;
+            margin-bottom: 24px;
+        }
+
+        // &-text {
+        //            }
+
+        &-img {
+            background-image: url(./images/quality-img-375.png);
+            background-size: cover;
+            width: 279px;
+            height: 156px;
+            left: 24px;
+            top: -78px;
+        }
+    }
+
+    .headquarters {
+        padding: 120px 0px 40px;
+
+        &-title {
+            text-align: center;
+        }
+    }
+
+    .headquarters_wrap {
+        justify-content: center;
+    }
+
+    .headquarters_item {
+        max-width: 327px;
+        margin-bottom: 80px;
+        text-align: center;
+
+        &-title {
+            font-size: 28px;
+            margin-bottom: 22px;
+        }
+
+        // &-text {
+        //             }
+    }
+
+    .headquarters_icon {
+        margin-bottom: 47px;
+    }
+}

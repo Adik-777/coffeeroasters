@@ -1,0 +1,155 @@
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+}
+
+.slider {
+
+    &__about {
+        align-items: center;
+        background-image: url(./images/slider_about.jpg);
+        min-height: 450px;
+    }
+
+    &__about_box {
+        max-width: 445px;
+
+        &-title {
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FEFCF7;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+.commitment_wrap {
+    margin-bottom: 88px;
+}
+
+.commitment {
+    @extend %flex-row;
+    min-height: 856px;
+
+    &__img {
+        background-image: url(./images/Our-commitment.png);
+        width: 445px;
+        height: 520px;
+
+    }
+
+    &__box {
+        max-width: 539px;
+
+        &-title {
+            color: #333D4B;
+            margin-bottom: 32px;
+        }
+
+        &-text {
+            color: #333D4B;
+            mix-blend-mode: normal;
+            opacity: 0.8;
+        }
+    }
+}
+
+.quality {
+    position: relative;
+    border-radius: 10px;
+    background-color: #2C343E;
+    max-width: 1280px;
+    width: 100%;
+    min-height: 474px;
+
+    &-wrap {
+        @extend %flex-row;
+        align-items: flex-end;
+    }
+
+    &-box {
+        max-width: 540px;
+        padding-bottom: 176px;
+    }
+
+    &-title {
+        margin-bottom: 32px;
+    }
+
+    &-text {
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    &-img {
+        position: absolute;
+        background-image: url(./images/quality-img-desktop.jpg);
+        border-radius: 10px;
+        width: 445px;
+        height: 474px;
+        bottom: 88px;
+        right: 85px;
+    }
+}
+
+.headquarters {
+    padding: 168px 0;
+
+    &-title {
+        text-align: start;
+        color: #83888F;
+        margin-bottom: 72px;
+    }
+}
+
+.headquarters_wrap {
+    @extend %flex-row;
+}
+
+.headquarters_item {
+    max-width: 285px;
+    width: 100%;
+
+    &-title {
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+    }
+
+    &-text {
+        color: #333D4B;
+    }
+}
+
+.headquarters_icon {
+    margin-bottom: 45px;
+}

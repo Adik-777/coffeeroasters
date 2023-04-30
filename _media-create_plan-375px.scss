@@ -1,0 +1,152 @@
+@media (max-width: 400px) {
+    .slider {
+        &__subscribeDefault {
+            align-items: center;
+            min-height: 400px;
+            background-image: url(./images/slider_subscribe_375.jpg);
+            background-size: cover;
+
+            &-box {
+                max-width: 279px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        &__subscribeDefault_box {
+
+            &-title {
+                font-size: 40px;
+                line-height: 40px;
+                margin-bottom: 22px;
+            }
+
+            // &-text {
+
+            // }
+        }
+    }
+
+    .choice_background {
+        max-width: 375px;
+        margin: 120px 0;
+        padding: 80px 0;
+    }
+
+    .choice {
+
+        &-oval {
+            display: none;
+        }
+    }
+
+    .choice_wrap {
+        justify-content: center;
+        gap: 56px;
+        text-align: center;
+    }
+
+    .choice_item {
+        max-width: 327px;
+
+        &-number {
+            margin-bottom: 24px;
+        }
+
+        &-title {
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 24px;
+        }
+
+        // &-text {
+
+        // }
+    }
+
+    .assortment {
+        display: flex;
+        justify-content: space-between;
+
+
+        &__choice {
+
+            &-wrap {
+                max-width: 328px;
+            }
+
+            &-title {
+                max-width: 240px;
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 32px;
+                margin-top: 110px;
+            }
+
+            &-title_1 {
+                margin-top: 0;
+            }
+
+            &-title_button {
+                margin-top: 75px;
+            }
+
+            &-title1_button {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+
+            // &-title::after {
+            //     content: "";
+            //     background-image: url(./icons/down_arrow.svg);
+            //     width: 18.19px;
+            //     height: 11.92px;
+            //     position: absolute;
+            //     left: 97.48%;
+            //     right: 0.03%;
+            //     top: 38.72%;
+            //     bottom: 36.44%;
+            // }
+
+            &-wrap_box {
+                // display: none;
+                gap: 16px;
+            }
+
+            &-box {
+                width: 328px;
+                height: 140px;
+            }
+
+            &-box_title {
+                margin-bottom: 8px;
+            }
+
+            &-box_text {
+                width: 278px;
+                padding-bottom: 0;
+            }
+
+        }
+    }
+
+    .order {
+        min-height: 338px;
+        padding: 32px 25px;
+        margin-bottom: 56px;
+        margin-top: 120px;
+
+        &__wrap {
+            margin-bottom: 120px;
+        }
+
+    }
+}
+
+// .button {
+
+
+//     &__order {
+
+//     }
+// }

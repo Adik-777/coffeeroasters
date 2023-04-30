@@ -1,0 +1,237 @@
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    @extend %flex-row;
+    min-height: 113px;
+
+    .menu__item:hover {
+        color: $g;
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+main {
+    @extend %flex-column;
+    width: 100%;
+}
+
+.slider {
+    align-items: center;
+    min-height: 600px;
+    background-image: url(../images/slider.jpg);
+    border-radius: 10px;
+
+    &__box {
+        max-width: 493px;
+        min-height: 367px;
+
+        &-title {
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 72px;
+            color: $w;
+            margin-bottom: 32px;
+        }
+
+        &-text {
+            max-width: 392px;
+            margin-bottom: 71px;
+            color: $w;
+            opacity: 0.8;
+        }
+
+    }
+}
+
+.collection_wrap {
+    background-image: url(../images/Group\ 13.png);
+    background-repeat: no-repeat;
+    background-position-y: 134px;
+    background-position-x: center;
+}
+
+.collection {
+    @extend %flex-row;
+    align-items: flex-end;
+    min-height: 861px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__sack_coffee {
+        margin-bottom: 71px;
+
+        &-title,
+        &-text {
+            color: $g;
+        }
+    }
+}
+
+.coffee_4 {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.about {
+
+    &__us {
+        @extend %flex-column;
+        position: relative;
+        border-radius: 10px;
+        background-color: #2C343E;
+        max-width: 1280px;
+        width: 100%;
+        min-height: 577px;
+        margin-bottom: 151px;
+        padding-top: 100px;
+
+        &-title {
+            font-family: 'Fraunces';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: $w;
+            margin-bottom: 32px;
+        }
+
+        &-text {
+            max-width: 528px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            mix-blend-mode: normal;
+            color: $w;
+            opacity: 0.8;
+        }
+
+        &-wrap {
+            @extend %flex-row;
+            position: absolute;
+            top: 346px;
+        }
+
+        &-box {
+            @extend %flex-column;
+            max-width: 350px;
+            width: 100%;
+            min-height: 382px;
+            background-color: #0E8784;
+            border-radius: 8px;
+            padding-top: 72px;
+        }
+
+        &-icon {
+            margin-bottom: 56px;
+        }
+
+        .icon {
+
+            &-car {
+                padding-top: 11px;
+                margin-bottom: 67px;
+            }
+        }
+
+        &-box_title,
+        &-box_text {
+            color: $w;
+        }
+    }
+}
+
+.works {
+    @extend %flex-column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 1085px;
+
+    &-title {
+        color: $lg;
+        margin-bottom: 95px;
+    }
+
+    &-oval {
+        @extend %flex-row;
+        flex-wrap: nowrap;
+        width: 791px;
+        height: 2px;
+        background-color: $p;
+        margin-bottom: 82px;
+    }
+
+}
+
+.works_wrap {
+    @extend %flex-row;
+    margin-bottom: 64px;
+}
+
+.works_item {
+    max-width: 285px;
+
+    &-number {
+        font-family: 'Fraunces';
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: $p;
+        margin-bottom: 38px;
+    }
+
+    &-title {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: $g;
+        margin-bottom: 43px;
+    }
+
+    &-text {
+        color: $g;
+    }
+}
+
+footer {
+    min-height: 120px;
+    background: #2C343E;
+    margin-bottom: 88px;
+}
+
+.footer_wrap {
+    @extend %flex-row;
+    gap: 103px;
+}
+
+.menu__footer:hover {
+    color: $w;
+}
+
+.socials {
+    @extend %flex-row;
+    width: 120px;
+    margin-left: 265px;
+}
+
+.socials svg path:hover {
+    fill: $p;
+}

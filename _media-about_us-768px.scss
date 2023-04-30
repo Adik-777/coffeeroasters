@@ -1,0 +1,119 @@
+@media (max-width: 800px) {
+    h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .slider {
+
+        &__about {
+            background-image: url(./images/slider_about_768.jpg);
+            min-height: 400px;
+        }
+
+        &__about_box {
+            max-width: 398px;
+            padding-left: 58px;
+
+            &-title {
+                margin-bottom: 24px;
+            }
+
+            &-text {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .commitment_wrap {
+        margin-bottom: 160px;
+    }
+
+    .commitment {
+        @extend %flex-row;
+        min-height: 758px;
+
+        &__img {
+            background-image: url(./images/commitment_img-768.jpg);
+            width: 281px;
+            height: 470px;
+        }
+
+        &__box {
+            max-width: 339px;
+
+            &-title {
+                line-height: 48px;
+                margin-bottom: 30px;
+            }
+
+            // &-text {
+
+            // }
+        }
+    }
+
+    .quality {
+        max-width: 688px;
+        min-height: 488px;
+        
+        &-wrap {
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        &-box {
+            max-width: 540px;
+            padding-bottom: 67px;
+            text-align: center;
+        }
+
+        &-title {
+            line-height: 48px;
+            margin-bottom: 24px;
+        }
+
+        // &-text {}
+
+        &-img {
+            width: 573px;
+            height: 320px;
+            left: 58px;
+            top: -160px;
+            background-image: url(./images/quality-img-768.jpg);
+        }
+    }
+
+    .headquarters {
+        padding: 144px 0;
+
+        &-title {
+            text-align: start;
+            color: #83888F;
+            margin-bottom: 72px;
+        }
+    }
+
+    .headquarters_wrap {
+        @extend %flex-row;
+    }
+
+    .headquarters_item {
+        max-width: 223px;
+        
+        &-title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .headquarters_icon {
+        margin-bottom: 48px;
+    }
+}

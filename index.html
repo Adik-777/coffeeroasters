@@ -5,127 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coffeeroasters</title>
+    <title>Desktop-Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./сss/styles.css">
 </head>
-
 <body>
     <header class="header container">
-        <a href="#"><img src="./images/logo.svg" alt=""></a>
+        <a href="./index.html"><img class="logo" src="./images/logo.svg" alt=""></a>
         <nav>
-            <ul>
-                <li><a class="menu" href="">HOME</a></li>
-                <li><a class="menu" href="">ABOUT US</a></li>
-                <li><a class="menu" href="">CREATE YOUR PLAN</a></li>
+            <ul class="menu menu__header">
+                <li><a class="menu__item menu__item-header" href="./index.html">home</a></li>
+                <li><a class="menu__item menu__item-header" href="./about-us.html">about us</a></li>
+                <li><a class="menu__item menu__item-header" href="./_desktop_create-plan.html">create your plan</a></li>
             </ul>
+            <button class="burger"></button>
         </nav>
     </header>
     <main>
         <section class="slider container">
             <article class="content">
-                <div class="box">
-                    <h1>Great coffee
+                <div class="slider__box">
+                    <h1 class="slider__box-title">Great coffee
                         made simple.</h1>
-                    <p>Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from
+                    <p class="slider__box-text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from
                         our
                         best roasters delivered directly to your door, at your schedule.</p>
-                    <a href="#" class="button">Create your plan</a>
+                    <a href="./_desktop_create-plan.html" class="button">Create your plan</a>
                 </div>
             </article>
         </section>
-        <section class="container">
+        <section class="container collection_wrap">
             <article class="content collection">
-                <article>
-                    <img class="coffee" src="./images/kopi1 copy.png" alt="">
-                    <h4>Gran Espresso</h4>
-                    <p>Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                <article class="collection__sack">
+                    <img class="collection__sack_coffee" src="./images/kopi1 copy.png" alt="">
+                    <div>
+                        <h4 class="collection__sack_coffee-title"> Gran Espresso</h4>
+                        <p class="collection__sack_coffee-text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+                    </div>
                 </article>
-                <article>
-                    <img class="coffee" src="./images/kopi2.png" alt="">
-                    <h4>Planalto</h4>
-                    <p>Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
+                <article class="collection__sack">
+                    <img class="collection__sack_coffee" src="./images/kopi2.png" alt="">
+                    <div>
+                        <h4 class="collection__sack_coffee-title"> Planalto</h4>
+                        <p class="collection__sack_coffee-text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
+                    </div>
                 </article>
-                <article>
-                    <img class="coffee" src="./images/kopi3.png" alt="">
-                    <h4>Piccollo</h4>
-                    <p>Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
+                <article class="collection__sack">
+                    <img class="collection__sack_coffee" src="./images/kopi3.png" alt="">
+                    <div>
+                        <h4 class="collection__sack_coffee-title">Piccollo</h4>
+                        <p class="collection__sack_coffee-text">Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
+                    </div>
                 </article>
-                <article>
-                    <img class="coffee coffee_4" src="./images/kopi4.png" alt="">
-                    <h4>Danche</h4>
-                    <p>Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
+                <article class="collection__sack">
+                    <img class="collection__sack_coffee coffee_4" src="./images/kopi4.png" alt="">
+                    <div>
+                        <h4 class="collection__sack_coffee-title">Danche</h4>
+                        <p class="collection__sack_coffee-text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
+                    </div>
                 </article>
             </article>
         </section>
         <section class="container ">
-            <article class="about_us">
-                <h2>Why choose us?</h2>
-                <p>A large part of our role is choosing which particular coffees will be featured
+            <article class="about__us">
+                <h2 class="about__us-title">Why choose us?</h2>
+                <p class="about__us-text">A large part of our role is choosing which particular coffees will be featured
                     in our range. This means working closely with the best coffee growers to give
                     you a more impactful experience on every level.</p>
-                <div class="content about_us-wrap">
-                    <article class="about_us-item">
-                        <img class="about_us-icon" src="./icons/coffee-bean.svg" alt="">
-                        <h4>Best quality</h4>
-                        <p>Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                <div class="content about__us-wrap">
+                    <article class="about__us-box">
+                        <img class="about__us-icon" src="./icons/coffee-bean.svg" alt="">
+                        <div>
+                            <h4 class="about__us-box_title">Best quality</h4>
+                            <p class="about__us-box_text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+                        </div>
                     </article>
-                    <article class="about_us-item">
-                        <img class="about_us-icon" src="./icons/Combined Shape.svg" alt="">
-                        <h4>Exclusive benefits</h4>
-                        <p>Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                    <article class="about__us-box">
+                        <img class="about__us-icon" src="./icons/Combined Shape.svg" alt="">
+                        <div>
+                            <h4 class="about__us-box_title">Exclusive benefits</h4>
+                            <p class="about__us-box_text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+                        </div>
                     </article>
-                    <article class="about_us-item">
-                        <img class="about_us-icon icon-car" src="./icons/car.svg" alt="">
-                        <h4>Free shipping</h4>
-                        <p>We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                    <article class="about__us-box">
+                        <img class="about__us-icon icon-car" src="./icons/car.svg" alt="">
+                        <div>
+                            <h4 class="about__us-box_title">Free shipping</h4>
+                            <p class="about__us-box_text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+                        </div>
                     </article>
                 </div>
             </article>
         </section>
         <section class="container">
             <article class="content works">
-                <h4>How it works</h4>
-                <div class="works_oval">
+                <h4 class="works-title">How it works</h4>
+                <div class="works-oval">
                     <img src="./icons/Oval Copy.svg" alt="">
                     <img src="./icons/Oval Copy.svg" alt="">
                     <img src="./icons/Oval Copy.svg" alt="">
                 </div>
                     <div class="works_wrap content">
                         <article class="works_item">
-                            <h1>01</h1>
-                            <h3>Pick your <br>
+                            <p class="works_item-number">01</p>
+                            <h3 class="works_item-title">Pick your <br>
                                 coffee</h3>
-                            <p>Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                            <p class="works_item-text">Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
                         </article>
                         <article class="works_item">
-                            <h1>02</h1>
-                            <h3>Choose the frequency</h3>
-                            <p>Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+                            <p class="works_item-number">02</p>
+                            <h3 class="works_item-title">Choose the frequency</h3>
+                            <p class="works_item-text">Customize&nbsp;your&nbsp;order&nbsp;frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
                         </article>
                         <article class="works_item">
-                            <h1>03</h1>
-                            <h3>Receive and enjoy!</h3>
-                            <p>We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+                            <p class="works_item-number">03</p>
+                            <h3 class="works_item-title">Receive and enjoy!</h3>
+                            <p class="works_item-text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
                         </article>
                      </div>
-                     <a href="#" class="button">Create your plan</a>
+                     <a href="./_desktop_create-plan.html" class="button">Create your plan</a>
             </article >
         </section>
     </main>
 <footer class="container">
 <section class="footer_wrap content">
-    <a href="#"><img src="./images/logo_footer.svg" alt=""></a>
+    <a href="./index.html"><img class="logo_footer" src="./images/logo_footer.svg" alt=""></a>
     <nav>
-        <ul>
-            <li><a class="menu menu_footer" href="">HOME</a></li>
-            <li><a class="menu menu_footer" href="">ABOUT US</a></li>
-            <li><a class="menu menu_footer" href="">CREATE YOUR PLAN</a></li>
+        <ul class="menu">
+            <li><a class="menu__item menu__footer" href="./index.html">HOME</a></li>
+            <li><a class="menu__item menu__footer" href="./about-us.html">ABOUT US</a></li>
+            <li><a class="menu__item menu__footer" href="./_desktop_create-plan.html">CREATE YOUR PLAN</a></li>
         </ul>
     </nav>
     <article class="socials">
